@@ -34,10 +34,10 @@ export default function ClaudeCodeAndAntigravityEssay() {
           of Python orchestrating a five-path LangGraph workflow, an MCP server,
           a Qdrant RAG layer, and a multi-provider LLM abstraction — I built
           from the first commit with Anthropic&apos;s Claude Code. The frontend
-          — a React 19 widget that embeds into a legacy ASP.NET host app — I
-          built first with Google Antigravity, then migrated to Claude Code
-          earlier this year. The same codebase, two different tools, in
-          sequence.
+          — a React 19 widget designed to embed into INDATA&apos;s flagship
+          Architect AI&trade; web application — I built first with Google
+          Antigravity, then migrated to Claude Code earlier this year. The
+          same codebase, two different tools, in sequence.
         </p>
 
         <p>
