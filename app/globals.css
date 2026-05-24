@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #ffffff;
+  --surface: #fafaf9;
+  --text: #18181b;
+  --text-muted: #71717a;
+  --border: #e4e4e7;
+  --accent: #d97706;
+}
+
+.dark {
+  --bg: #0a0a0a;
+  --surface: #18181b;
+  --text: #fafafa;
+  --text-muted: #a1a1aa;
+  --border: #27272a;
+  --accent: #fbbf24;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-feature-settings: "rlig" 1, "calt" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Subtle selection color */
+::selection {
+  background-color: var(--accent);
+  color: var(--bg);
+}
+
+/* Long-form prose adjustments */
+.prose-custom h2 {
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+.prose-custom h3 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.prose-custom p {
+  line-height: 1.7;
+}
+
+.prose-custom a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.prose-custom a:hover {
+  text-decoration-thickness: 2px;
+}
