@@ -53,14 +53,17 @@ export default function NexusPage() {
         </p>
 
         <p>
-          The reason I can design a system like this from scratch is that I have, at one
-          point or another, sat in nearly every seat it&apos;s built to serve. At
-          Duncan-Hurst I ran the operations and the compliance program and was backup on the
-          trading desk. At Relational Investors I was backup to the head trader at an
-          eight-billion-dollar activist fund. In each technology role across thirty years, I
-          had to learn the underlying business cold in order to automate it. Building Nexus
-          wasn&apos;t a technologist guessing at workflows — it was someone who has done the
-          workflows building the tool he wishes he&apos;d had.
+          The reason I can design a system like this from scratch is that I have spent three
+          decades inside the rooms where this work actually happens. Across thirteen years at
+          Duncan-Hurst I worked alongside the heads of every functional area — portfolio
+          management, trading, operations, compliance, finance — learning each workflow in
+          enough detail to automate it. As the firm wound down in its final year, I also took
+          direct responsibility for operations, compliance administration, and backup trading.
+          At Relational Investors I was backup to the head trader at an eight-billion-dollar
+          activist fund. In every technology role across thirty years, the prerequisite for
+          automating a business function was understanding it cold. Building Nexus wasn&apos;t
+          a technologist guessing at workflows — it was someone who has done them, or sat with
+          the people who do them, building the tool he wishes he&apos;d had.
         </p>
 
         <h2 className="text-2xl font-semibold tracking-tight mt-12 mb-4">
