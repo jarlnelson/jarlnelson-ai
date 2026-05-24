@@ -11,7 +11,7 @@ export default function HomePage() {
           I build investment-management technology.
         </h1>
         <p className="text-lg sm:text-xl text-zinc-600 dark:text-zinc-300 leading-relaxed mb-4 max-w-2xl">
-          Most recently: <span className="font-medium text-zinc-900 dark:text-zinc-100">INDATA Nexus</span> — a
+          Most recently: <span className="font-medium text-zinc-900 dark:text-zinc-100">INDATA Nexus&trade;</span> — a
           production AI agent for buy-side firms. Built solo, with Claude Code.
         </p>
         <p className="text-base text-zinc-500 dark:text-zinc-400 max-w-2xl">
@@ -29,7 +29,7 @@ export default function HomePage() {
           className="group block rounded-lg border border-zinc-200 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700 p-6 sm:p-8 transition-colors"
         >
           <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-3 group-hover:text-accent dark:group-hover:text-accent-dark transition-colors">
-            INDATA Nexus
+            INDATA Nexus&trade;
           </h2>
           <p className="text-zinc-600 dark:text-zinc-300 leading-relaxed mb-5">
             Building a production AI agent for buy-side investment management — five intent paths,

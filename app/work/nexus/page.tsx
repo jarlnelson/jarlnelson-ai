@@ -15,7 +15,7 @@ export default function NexusPage() {
           Work · 2025 – present · INDATA
         </div>
         <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight leading-[1.1] mb-4">
-          INDATA Nexus
+          INDATA Nexus&trade;
         </h1>
         <p className="text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed">
           Building an AI agent for buy-side investment management — solo, in fifteen months.
@@ -47,8 +47,9 @@ export default function NexusPage() {
         </p>
 
         <p>
-          The detail that doesn&apos;t appear in any press release: I built and maintain the
-          entire system alone, using Claude Code as my development partner.
+          The detail that doesn&apos;t appear in any press release: I designed and led the
+          development of the entire system, working alone with Claude Code as my development
+          partner.
         </p>
 
         <p>
@@ -70,7 +71,7 @@ export default function NexusPage() {
           The first version was deliberately narrow. Text-to-SQL, a single LLM call per question,
           one large system prompt containing the schema for our two most-asked-about tables
           (holdings and transactions). The model returned SQL, we executed it inside our
-          perimeter, we rendered the result to a grid. No client data ever reached the LLM.
+          perimeter, we rendered the result to a data grid. No client data ever reached the LLM.
         </p>
 
         <p>
@@ -133,10 +134,10 @@ export default function NexusPage() {
 
         <ul className="list-disc pl-6 space-y-2">
           <li>
-            Nexus <em>consumes</em> external MCP servers — Alpha Vantage, Financial Datasets, an
-            internal C# REST API — with progressive tool discovery for wrapper-style servers,
-            tool whitelisting, response filtering before narrative generation, and automatic
-            session-context injection into tool calls.
+            Nexus <em>consumes</em> external MCP servers — third-party market-data providers
+            and an internal REST API — with progressive tool discovery for wrapper-style
+            servers, tool whitelisting, response filtering before narrative generation, and
+            automatic session-context injection into tool calls.
           </li>
           <li>
             Nexus <em>publishes</em> its own MCP server — read-only access to holdings,
@@ -218,8 +219,8 @@ export default function NexusPage() {
         </p>
 
         <p>
-          I&apos;m the sole contributor on both repositories to date — 100% of commits across
-          backend and frontend — and the sole merge authority going forward.
+          I&apos;ve been the sole contributor on both repositories to date and the sole merge
+          authority going forward as the team scales.
         </p>
       </div>
 

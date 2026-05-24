@@ -27,7 +27,7 @@ export default function WorkIndexPage() {
           2025 – present · INDATA
         </div>
         <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-3 group-hover:text-accent dark:group-hover:text-accent-dark transition-colors">
-          INDATA Nexus
+          INDATA Nexus&trade;
         </h2>
         <p className="text-zinc-600 dark:text-zinc-300 leading-relaxed mb-5">
           A production AI Platform for buy-side investment management. Five intent paths, an MCP

@@ -84,11 +84,11 @@ export default function AboutPage() {
 
         <p>
           The work I&apos;m proudest of is the most recent. From February 2025 through May 2026
-          I designed and built <a href="/work/nexus">INDATA Nexus</a>, our AI Platform for
-          buy-side firms. I built it solo, using Claude Code as my development partner. It
-          launched publicly in May 2026 and is in production at one client today, with more
-          rollouts in progress. A new &ldquo;AI-forward&rdquo; developer is about to join the
-          team to help extend it.
+          I designed and led the development of{" "}
+          <a href="/work/nexus">INDATA Nexus&trade;</a>, our AI Platform for buy-side firms,
+          working alone with Claude Code as my development partner. It launched publicly in May
+          2026 and is in production at one client today, with more rollouts in progress. A new
+          &ldquo;AI-forward&rdquo; developer is about to join the team to help extend it.
         </p>
 
         <p>
