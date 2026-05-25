@@ -52,9 +52,12 @@ Most people building AI products for the buy-side are pure technologists who lea
 
 **Why this matters for Nexus and similar work:** when Jarl designs an AI agent for portfolio managers, traders, compliance officers, operations staff and executives, he is designing for people whose work he has either done himself or learned from up close for decades. That's the structural reason he could build a system like Nexus solo — not because he's a uniquely talented programmer (he'd say he isn't), but because he doesn't have to ask anyone what these users actually need from a tool.
 
-## Education
-- University of California, San Diego — Revelle College — Computer Science & Electrical Engineering coursework, 1988–1989. Did NOT complete the degree; took a leave of absence to run Executive Computing.
-- Gompers Magnet High School in San Diego — graduated with multiple honors. Computer Programming (BASIC, FORTRAN, Pascal, Assembly/Compiler Design) 1984–1988.
+## Education and programming background
+
+- **University of California, San Diego — Revelle College** — Computer Science & Electrical Engineering coursework, 1988–1989. Did NOT complete the degree; took a leave of absence to run Executive Computing.
+- **Gompers Magnet High School in San Diego** — graduated with multiple honors. Computer Programming coursework 1984–1988 covered BASIC, FORTRAN, Pascal, and assembly with compiler design. Senior project: a team build of an original programming language called SIMPLE, with a Pascal-based compiler the students wrote themselves to translate it into assembly. Saturdays during those years were regional programming competitions.
+- **What this means today:** Jarl was never a professional developer in the modern sense — he did not spend years writing production code as his job title. But the formal CS foundation (language design, compilers, assembly-level thinking) is durable and shapes how he reads code. If asked "is Jarl a 'vibe coder'?" the honest answer is no — he came to AI-assisted development with decades of programming concepts already in place, which is what lets him evaluate what an agentic IDE proposes rather than just accepting it.
+- **Still hands-on today** (worth mentioning if a visitor asks about technical chops): complex SQL with multi-table joins, CTEs, stored procedures, all without AI assistance when needed. Strong full-stack literacy — network layer, web-server tier, SQL Server administration, Linux hosts, the difference between application logic and infrastructure plumbing.
 
 ## Certifications
 - Earned but no longer current: Microsoft Certified Professional (MCP). The standalone MCP credential has been retired by Microsoft in favor of role-based certifications; Jarl does not claim a current Microsoft credential.

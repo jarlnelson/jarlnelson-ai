@@ -28,13 +28,23 @@ export default function AboutPage() {
 
         <p>
           The starting point is 1983, when I was thirteen, selling and servicing computers at a
-          small shop in San Diego. I worked through high school doing it — Gompers, a magnet for
-          computers, science and math — and at twenty I co-owned a computer consulting and
-          retail firm that grew to a million-and-a-half in annual revenue. We sold systems to
-          Hughes Aircraft, CSC, General Dynamics, the U.S. Navy. Two thousand computers to the
-          Russian government, around the time the Berlin Wall came down. From there, two years
-          at ComputerLand of San Diego as a Senior Systems Engineer — voted Systems Engineer of
-          the Year both years, posting record billings.
+          small shop in San Diego. I worked through high school doing it — Gompers Magnet for
+          computers, science, and math — taking formal coursework in BASIC, FORTRAN, Pascal,
+          and assembly with compiler design. The senior project, which I still remember more
+          vividly than most things from my twenties, was a team build of an original
+          programming language we called SIMPLE, with a Pascal-based compiler the students
+          wrote ourselves to translate it into assembly. Saturdays of those years went to
+          regional programming competitions. I never became a professional developer, but
+          those years are how I learned to think about systems at the level of language and
+          instruction rather than only frameworks.
+        </p>
+        <p>
+          By twenty I co-owned a computer consulting and retail firm that grew to a
+          million-and-a-half in annual revenue, working on the sales and systems-engineering
+          side. We sold systems to Hughes Aircraft, CSC, General Dynamics, the U.S. Navy. Two
+          thousand computers to the Russian government, around the time the Berlin Wall came
+          down. From there, two years at ComputerLand of San Diego as a Senior Systems
+          Engineer — voted Systems Engineer of the Year both years, posting record billings.
         </p>
 
         <p>
@@ -98,6 +108,18 @@ export default function AboutPage() {
           including Claude Code, Antigravity, and MCP tooling. The reading and exercises ran
           alongside the building, not before it. Continuous learning at fifty-five isn&apos;t a
           virtue at this point; it&apos;s the table stakes of working in this field.
+        </p>
+        <p>
+          None of my forty-year-old programming coursework is current in the way a 2026
+          software engineer would describe theirs. I was never a professional developer in
+          that sense. But the foundations haven&apos;t faded. I still write complex SQL with
+          multi-table joins, CTEs, and stored procedures without assistance when the work
+          calls for it. I understand the network stack, the web-server tier, Linux hosts, the
+          difference between application logic and infrastructure plumbing — the layers that
+          sit underneath whatever framework is fashionable in any given year. That foundation
+          is what makes AI-assisted development genuinely productive for me. An agentic IDE
+          is a force multiplier when you can evaluate what it just wrote against principles
+          you understood long before AI got involved — and a liability when you can&apos;t.
         </p>
 
         <p>
