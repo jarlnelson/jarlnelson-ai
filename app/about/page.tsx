@@ -111,15 +111,25 @@ export default function AboutPage() {
         </p>
         <p>
           None of my forty-year-old programming coursework is current in the way a 2026
-          software engineer would describe theirs. I was never a professional developer in
-          that sense. But the foundations haven&apos;t faded. I still write complex SQL with
-          multi-table joins, CTEs, and stored procedures without assistance when the work
-          calls for it. I understand the network stack, the web-server tier, Linux hosts, the
-          difference between application logic and infrastructure plumbing — the layers that
-          sit underneath whatever framework is fashionable in any given year. That foundation
-          is what makes AI-assisted development genuinely productive for me. An agentic IDE
-          is a force multiplier when you can evaluate what it just wrote against principles
-          you understood long before AI got involved — and a liability when you can&apos;t.
+          software engineer would describe theirs, and I was never a professional developer
+          in that sense. But the foundations haven&apos;t faded. I still write complex SQL
+          with multi-table joins, CTEs, and stored procedures without assistance when the
+          work calls for it. I&apos;m comfortable across the full stack — the OSI layers,
+          the web-server tier, Linux hosts, Docker, IIS URL rewrites, SQL Server
+          administration, the difference between application logic and infrastructure
+          plumbing. I built most of Nexus&apos;s production infrastructure myself.
+        </p>
+        <p>
+          It&apos;s fair to point out that AI tools have made a lot of this work more
+          accessible to non-specialists, and they have — that&apos;s a good thing. An amateur
+          with a good AI assistant can install Ubuntu, get a container running, and feel
+          like they&apos;ve shipped something. What AI has not yet democratized is the
+          judgment about which of fifteen possible approaches is the right one, what&apos;s
+          about to break under production load, and what to do when the suggested fix is
+          subtly wrong. That judgment is what compresses what would otherwise be six months
+          of stumbling into six weeks of shipping. An agentic IDE is a force multiplier when
+          you can evaluate what it just wrote against principles you understood long before
+          AI got involved — and a liability when you can&apos;t.
         </p>
 
         <p>
