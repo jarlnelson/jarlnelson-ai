@@ -11,25 +11,21 @@ export default function AboutPage() {
   return (
     <article className="max-w-2xl mx-auto px-6 py-16 sm:py-20 prose-custom">
       <header className="mb-12">
-        <div className="flex items-start gap-5 sm:gap-6">
-          <Image
-            src="/Jarl-Nelson-Headshot-061926.png"
-            alt="Jarl Nelson"
-            width={1152}
-            height={896}
-            priority
-            sizes="(max-width: 640px) 96px, 128px"
-            className="h-24 w-24 sm:h-32 sm:w-32 flex-none rounded-2xl object-cover object-center ring-1 ring-zinc-200 dark:ring-zinc-800"
-          />
-          <div className="pt-1">
-            <div className="text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-4">
-              About
-            </div>
-            <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight leading-tight">
-              A career inside one industry.
-            </h1>
-          </div>
+        <Image
+          src="/Jarl-Nelson-Headshot-061926.png"
+          alt="Jarl Nelson"
+          width={1152}
+          height={896}
+          priority
+          sizes="(max-width: 640px) 96px, 112px"
+          className="h-24 w-24 sm:h-28 sm:w-28 rounded-2xl object-cover object-center ring-1 ring-zinc-200 dark:ring-zinc-800 mb-8"
+        />
+        <div className="text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-4">
+          About
         </div>
+        <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight leading-tight">
+          A career inside one industry.
+        </h1>
       </header>
       
       <div className="space-y-6 text-zinc-700 dark:text-zinc-300 leading-relaxed text-[17px]">
