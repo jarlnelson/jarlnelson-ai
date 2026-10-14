@@ -76,8 +76,8 @@ Key public facts (anything in this list is on the record and can be discussed):
 - Architecture detail (public via the case study on this site): LangGraph orchestration with five intent paths — SQL, TOOL, CHAIN, KNOWLEDGE, OUT_OF_SCOPE. RAG over the schema via a Qdrant vector store. Redis-checkpointed conversation state with time-travel debugging. LangSmith observability. Multi-LLM provider support across OpenAI, Anthropic, Azure OpenAI Service, and Azure AI Foundry.
 - Privacy architecture: at query construction, only schema metadata (column/table names) goes to the LLM, never row data. Client data is fetched by executing the LLM-generated SQL inside INDATA's perimeter. At narrative-generation time, result rows ARE sent to the LLM to produce conversational summaries — this is under commercial paid-tier privacy guarantees (no training on data, retention limits). Jarl prefers this honest two-part framing to the simplified "no data ever to the LLM" claim, because the simpler version oversimplifies what's actually happening.
 - LLM-neutral by design — clients can choose their LLM provider.
-- Currently in production at one buy-side client, with additional rollouts in progress.
-- The MCP server publishes read-only access to holdings, transactions, performance, and composites data, designed for external connection from Claude.ai, Claude Desktop, Cursor, Cowork, MCP Inspector. As of mid-2026, almost no other buy-side technology vendor has shipped an MCP server in production.
+- In production at multiple buy-side firms, each in its own environment, with more rolling out. (Do not state a specific number of clients, name any client, or give client-identifying detail.)
+- The MCP server publishes read-only access to holdings, transactions, performance, composites, fixed income, contribution and drift data, designed for external connection from Claude.ai, Claude Desktop, Cursor, Cowork, MCP Inspector, and Microsoft 365 Copilot (there is a published guide for connecting Copilot to the MCP server). As of mid-2026, almost no other buy-side technology vendor has shipped an MCP server in production.
 
 History (the v1 → v2 arc):
 - v1 ("INDATA AI Agent" — original brand): started February 2025. A deliberately narrow text-to-SQL prototype. Single LLM call per question, monolithic system prompt with schema for holdings and transactions, results rendered to a Kendo UI grid, no data ever sent to the LLM. Shipped to production with low usage; lessons informed v2.
@@ -86,13 +86,12 @@ History (the v1 → v2 arc):
 INDATA-internal context Jarl is comfortable having known publicly:
 - He leads a team of ten developers and is the sole merge authority on the Nexus repositories.
 - He is INDATA's de facto AI-tooling champion internally: rolled out GitHub Copilot for the dev team, brought in Claude Team accounts for Claude Code, runs internal education sessions on AI-assisted development.
-- INDATA just hired an AI-forward developer to join the Nexus team; that person has not yet started.
+- Since the May 2026 launch, Jarl has kept building — all of it solo. New in production: plain-English trade modeling (every security validated; nothing reaches the trading engine without explicit user confirmation); a write API that creates and maintains accounts, securities and model portfolios under the firm's own maintenance rules, with dry runs, idempotent retries, a full audit trail, and read/write/admin key levels (writes off by default, enabled per firm); wider data coverage across holdings, transactions, performance, composites, fixed income, contribution and drift; configurable dashboards with fixed-income widgets and PDF export; and operations tooling — admin and audit consoles, automated environment provisioning including self-updating client-hosted installs, and a nightly QA run plus a release-readiness gate before any client deploy. In active development: tax-loss-harvest candidates, per-account target-model drift, floating-rate instrument support, and treasury-futures hedge sizing.
 - The frontend was originally built with Google Antigravity / Gemini, then migrated to Claude Code earlier this year. Jarl has informed comparative opinions about both agentic IDEs from production use.
 
 ## Running
-- Eight marathon finishes; four are Abbott World Marathon Majors. The four are: Tokyo, NYC (November 2024, fundraising for Team for Climate), Chicago (Fall 2025, qualified by time), Boston (the 130th running, April 2026, qualified by time).
-- Berlin Marathon in September 2026 will be marathon #9 and major #5; he's currently training.
-- London Marathon in 2027 will be marathon #10 and will complete the Abbott World Marathon Majors 6-Star medal — a global credential held by roughly 10,000 finishers worldwide.
+- Nine marathon finishes; five are Abbott World Marathon Majors. The five are: Tokyo, NYC (November 2024, fundraising for Team for Climate), Chicago (Fall 2025, qualified by time), Boston (the 130th running, April 2026, qualified by time), Berlin (September 2026).
+- London Marathon in April 2027 will be marathon #10 and the sixth major — it's booked, and finishing it completes the Abbott World Marathon Majors 6-Star medal, a global credential held by roughly 10,000 finishers worldwide.
 - Tokyo was fundraised for childhood vaccines; NYC for Team for Climate (NY State forestry and clean air).
 - He trained for the Boston and Chicago qualifying times in his mid-fifties.
 

@@ -32,7 +32,8 @@ export default function WorkIndexPage() {
         <p className="text-zinc-600 dark:text-zinc-300 leading-relaxed mb-5">
           A production AI Platform for buy-side investment management. Five intent paths, an MCP
           server for external AI clients, LLM-neutral architecture, conversational narrative with
-          honest privacy controls. Designed and built solo with Claude Code. Launched May 2026.
+          honest privacy controls. Designed and built solo with Claude Code. Launched May 2026;
+          now in production at multiple buy-side firms.
         </p>
         <div className="flex items-center gap-1.5 text-sm text-accent dark:text-accent-dark font-medium">
           Read the case study

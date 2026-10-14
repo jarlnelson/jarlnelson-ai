@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <div className="max-w-3xl mx-auto px-6 pt-16 pb-12 sm:pt-24">
       {/* Hero */}
-      <section className="mb-20 sm:mb-28">
+      <section className="mb-16 sm:mb-20">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight leading-[1.05] mb-8">
           I build investment-management technology.
         </h1>
@@ -16,6 +16,23 @@ export default function HomePage() {
         </p>
         <p className="text-base text-zinc-500 dark:text-zinc-400 max-w-2xl">
           Three decades in the industry. Currently leading product for AI at INDATA.
+        </p>
+      </section>
+
+      {/* Ask the agent */}
+      <section id="ask" className="mb-20 sm:mb-24 scroll-mt-24">
+        <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight mb-2">
+          Ask this site anything about me.
+        </h2>
+        <p className="text-zinc-600 dark:text-zinc-300 leading-relaxed mb-5 max-w-2xl">
+          An AI agent that knows my background, my work at INDATA, and the things I&apos;ve
+          built. Ask it what you&apos;d want to know in a first meeting — it answers in my
+          voice and points you to the details.
+        </p>
+        <AskJarlChat />
+        <p className="mt-3 text-xs text-zinc-500 dark:text-zinc-400">
+          Built with the same patterns I ship at INDATA — streaming, system-prompted, rate-limited.
+          Source on GitHub.
         </p>
       </section>
 
@@ -34,8 +51,8 @@ export default function HomePage() {
           <p className="text-zinc-600 dark:text-zinc-300 leading-relaxed mb-5">
             Building a production AI agent for buy-side investment management — five intent paths,
             an MCP server for external AI clients, LLM-neutral architecture, and a conscious privacy
-            trade-off honestly told. Launched May 2026; in production at one client today, with more
-            rollouts in progress.
+            trade-off honestly told. Launched May 2026; now in production at multiple buy-side firms,
+            with more rolling out.
           </p>
           <div className="flex items-center gap-1.5 text-sm text-accent dark:text-accent-dark font-medium">
             Read the case study
@@ -76,21 +93,9 @@ export default function HomePage() {
             Outside
           </div>
           <div className="text-base font-medium group-hover:text-accent dark:group-hover:text-accent-dark transition-colors">
-            Eight marathons, four majors. Chasing the 6-Star.
+            Nine marathons, five majors. One from the 6-Star.
           </div>
         </Link>
-      </section>
-
-      {/* Ask Jarl */}
-      <section className="mb-12">
-        <div className="text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-3">
-          Ask the agent
-        </div>
-        <AskJarlChat />
-        <p className="mt-3 text-xs text-zinc-500 dark:text-zinc-400">
-          Built with the same patterns I ship at INDATA — streaming, system-prompted, rate-limited.
-          Source on GitHub.
-        </p>
       </section>
     </div>
   );

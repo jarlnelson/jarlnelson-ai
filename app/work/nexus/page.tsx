@@ -43,7 +43,8 @@ export default function NexusPage() {
           >
             press release
           </a>
-          ) and is in production at one buy-side client today, with more rollouts in progress.
+          ) and is now in production at multiple buy-side firms, each in its own environment,
+          with more rolling out.
         </p>
 
         <p>
@@ -208,6 +209,55 @@ export default function NexusPage() {
         </p>
 
         <h2 className="text-2xl font-semibold tracking-tight mt-12 mb-4">
+          Since the launch
+        </h2>
+
+        <p>
+          Launching was the start of the work, not the end of it. Nexus now runs in production at
+          multiple buy-side firms, each in its own environment, with more rolling out — and the
+          system has grown well past what shipped in May.
+        </p>
+
+        <ul className="list-disc pl-6 space-y-2">
+          <li>
+            <strong>Modeling and trading in plain English.</strong> A user can describe a trade
+            across several securities or strategies in natural language; every name is validated
+            before an order is built, and nothing reaches the trading engine until the user
+            confirms it.
+          </li>
+          <li>
+            <strong>A write API, not just reads.</strong> Nexus now creates and maintains accounts,
+            securities and model portfolios under the same rules as the firm&apos;s maintenance
+            screens — with dry runs, idempotent retries and a full audit trail. Access is keyed at
+            read, write and administrator levels, writes off by default and enabled per firm.
+          </li>
+          <li>
+            <strong>Wider data coverage.</strong> The REST API and MCP server now span holdings,
+            transactions, performance, composites, fixed income, contribution and drift — with
+            specialist query paths for portfolio drift against composites and peers, and
+            contribution to return by sector and asset class.
+          </li>
+          <li>
+            <strong>Configurable dashboards.</strong> For a single portfolio, a strategy or a
+            hand-picked set — fixed-income widgets, print-ready PDF export.
+          </li>
+          <li>
+            <strong>Operations tooling for firms running it themselves.</strong> An admin console
+            for model and knowledge-base settings; an audit console that traces each answer step by
+            step with usage and estimated cost; automated provisioning of new environments,
+            including client-hosted installs that pull their own updates; and a nightly QA run plus
+            a release-readiness gate every client deploy has to pass.
+          </li>
+        </ul>
+
+        <p>
+          One external detail worth noting: there&apos;s now a published guide for connecting
+          Microsoft 365 Copilot to the Nexus MCP server — the open-protocol bet from the
+          architecture paying off in practice, with a mainstream AI client querying buy-side
+          portfolio data over the open protocol.
+        </p>
+
+        <h2 className="text-2xl font-semibold tracking-tight mt-12 mb-4">
           What this is — and isn&apos;t
         </h2>
 
@@ -215,15 +265,13 @@ export default function NexusPage() {
           Nexus is not the only AI work at INDATA — natural-language features have been part of
           our Architect AI product for years. Nexus is the next-generation layer underneath:
           the AI platform, the MCP server, the LLM-neutral abstraction, the orchestrated agent.
-          It is in production at one buy-side client today, with additional rollouts in
-          progress. Active development continues — API Viewer, Dashboards, a growing SQL RAG
-          few-shot library, deployment automation — and a newly hired AI-forward developer is
-          about to join the team to help extend the system.
+          It is in production at multiple buy-side firms today, each in its own environment, with
+          more rolling out. Active development continues — tax-loss-harvest candidates, per-account
+          target-model drift, floating-rate instrument support, and treasury-futures hedge sizing.
         </p>
 
         <p>
-          I&apos;ve been the sole contributor on both repositories to date and the sole merge
-          authority going forward as the team scales.
+          I remain the sole contributor on both repositories and the sole merge authority.
         </p>
       </div>
 

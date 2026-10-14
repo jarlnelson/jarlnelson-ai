@@ -11,25 +11,21 @@ export default function AboutPage() {
   return (
     <article className="max-w-2xl mx-auto px-6 py-16 sm:py-20 prose-custom">
       <header className="mb-12">
-        <div className="flex items-start gap-5 sm:gap-6">
-          <Image
-            src="/Jarl-Nelson-Headshot-061926.png"
-            alt="Jarl Nelson"
-            width={1152}
-            height={896}
-            priority
-            sizes="(max-width: 640px) 96px, 128px"
-            className="h-24 w-24 sm:h-32 sm:w-32 flex-none rounded-2xl object-cover object-center ring-1 ring-zinc-200 dark:ring-zinc-800"
-          />
-          <div className="pt-1">
-            <div className="text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-4">
-              About
-            </div>
-            <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight leading-tight">
-              A career inside one industry.
-            </h1>
-          </div>
+        <Image
+          src="/Jarl-Nelson-Headshot-061926.png"
+          alt="Jarl Nelson"
+          width={1152}
+          height={896}
+          priority
+          sizes="(max-width: 640px) 96px, 112px"
+          className="h-24 w-24 sm:h-28 sm:w-28 rounded-2xl object-cover object-center ring-1 ring-zinc-200 dark:ring-zinc-800 mb-8"
+        />
+        <div className="text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-4">
+          About
         </div>
+        <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight leading-tight">
+          A career inside one industry.
+        </h1>
       </header>
 
       <div className="space-y-6 text-zinc-700 dark:text-zinc-300 leading-relaxed text-[17px]">
@@ -111,8 +107,10 @@ export default function AboutPage() {
           I designed and led the development of{" "}
           <a href="/work/nexus">INDATA Nexus&trade;</a>, our AI Platform for buy-side firms,
           working alone with Claude Code as my development partner. It launched publicly in May
-          2026 and is in production at one client today, with more rollouts in progress. A new
-          &ldquo;AI-forward&rdquo; developer is about to join the team to help extend it.
+          2026 and is now in production at multiple buy-side firms, with more rolling out. I&apos;ve
+          kept building since — a write API, configurable dashboards, plain-English trade modeling,
+          and the operations tooling firms need to run it themselves — and I remain the sole
+          contributor and merge authority.
         </p>
 
         <p>
@@ -147,10 +145,10 @@ export default function AboutPage() {
         </p>
 
         <p>
-          Outside the building I run marathons — <a href="/outside">eight finishes so far</a>,
-          four of them Abbott World Marathon Majors. Boston this April (qualified by time),
-          Chicago last fall (also qualified). Berlin in September will be number nine. London in
-          2027 will be number ten — and will complete the 6-Star.
+          Outside the building I run marathons — <a href="/outside">nine finishes so far</a>,
+          five of them Abbott World Marathon Majors. Boston in 2026 and Chicago in 2025 (both
+          qualified by time), then Berlin in September 2026. London in April 2027 will be number
+          ten — and will complete the 6-Star.
         </p>
 
         <p>That&apos;s the shape of it.</p>

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Outside — Jarl Nelson",
   description:
-    "Eight marathons. Chasing the Abbott World Marathon Majors 6-Star medal.",
+    "Nine marathons. One major from the Abbott World Marathon Majors 6-Star medal.",
 };
 
 export default function OutsidePage() {
@@ -14,13 +14,13 @@ export default function OutsidePage() {
           Outside
         </div>
         <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight leading-tight">
-          Eight marathons, four majors, the 6-Star ahead.
+          Nine marathons, five majors, one from the 6-Star.
         </h1>
       </header>
 
       <div className="space-y-6 text-zinc-700 dark:text-zinc-300 leading-relaxed text-[17px]">
         <p>
-          I run marathons. Eight finishes so far; four of them are Abbott World Marathon
+          I run marathons. Nine finishes so far; five of them are Abbott World Marathon
           Majors, four are not.
         </p>
 
@@ -44,12 +44,12 @@ export default function OutsidePage() {
           <li>
             Boston Marathon, the 130th running, April 2026 — qualified by time.
           </li>
+          <li>Berlin Marathon, September 2026.</li>
         </ul>
 
         <p>
-          <strong>Berlin Marathon</strong> is September 2026; I&apos;m in training now. It will
-          be marathon number nine. <strong>London Marathon</strong> in 2027 will be marathon
-          ten — and will complete the 6-Star.
+          That makes Berlin number nine. <strong>London Marathon</strong>, April 2027, will be
+          marathon ten and the sixth major — completing the 6-Star. It&apos;s booked.
         </p>
 
         <p>
