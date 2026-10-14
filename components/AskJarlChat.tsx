@@ -4,6 +4,7 @@ import { useChat } from "ai/react";
 import { useEffect, useRef, useState } from "react";
 import { Send, Sparkles, RefreshCw } from "lucide-react";
 import ReactMarkdown from "react-markdown";
+import { track } from "@vercel/analytics";
 import { STARTER_QUESTIONS } from "@/lib/agent-knowledge";
 
 export default function AskJarlChat() {
@@ -37,16 +38,27 @@ export default function AskJarlChat() {
   }, [messages.length]);
 
   function onStarterClick(question: string) {
+    track("ask_jarl_starter_clicked", { question });
     setInput(question);
     setShowStarters(false);
     // Focus the textarea so the user can edit if they want
     inputRef.current?.focus();
   }
 
+  function onSubmitMessage(e: React.FormEvent<HTMLFormElement>) {
+    if (!input.trim() || isLoading) {
+      e.preventDefault();
+      return;
+    }
+    track("ask_jarl_message_sent", { first: messages.length === 0 });
+    handleSubmit(e);
+  }
+
   function onKeyDown(e: React.KeyboardEvent<HTMLTextAreaElement>) {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
       if (input.trim() && !isLoading) {
+        track("ask_jarl_message_sent", { first: messages.length === 0 });
         handleSubmit(e as unknown as React.FormEvent<HTMLFormElement>);
       }
     }
@@ -196,7 +208,7 @@ export default function AskJarlChat() {
 
       {/* Input */}
       <form
-        onSubmit={handleSubmit}
+        onSubmit={onSubmitMessage}
         className="border-t border-zinc-200 dark:border-zinc-800 px-3 py-3 flex items-end gap-2"
       >
         <textarea
