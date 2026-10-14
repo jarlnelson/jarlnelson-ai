@@ -27,7 +27,7 @@ export default function AboutPage() {
           A career inside one industry.
         </h1>
       </header>
-
+      
       <div className="space-y-6 text-zinc-700 dark:text-zinc-300 leading-relaxed text-[17px]">
         <p>
           I&apos;ve spent my career inside investment management and watched the technology
